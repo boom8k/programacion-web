@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lobster&family=Open+Sans:ital,wght@1,300&family=PT+Serif&family=Roboto:wght@100&display=swap');
+:root{
+    --negro: #04020c;
+    --blanco: #fff;
+    --azul: #0614dfc7;
+    --amarillo:#e9c007;
+    --degradado:linear-gradient(90deg,var(--negro),);
+}
+*{
+    
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    
+}
+section{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+
+}
+.heading{
+    text-align: center;
+    background: linear-gradient(to right,black 45%, rgb(0, 15, 226) 65%);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 2rem;
+}
+
+.leer .caja-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.leer .caja-contenedor .caja{
+    flex-grow: 3rem;
+    background: rgb(240, 244, 245);
+    border-radius: .1rem;
+    border:  .1rem solid rgb(7, 149, 168);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+    margin: 1rem;
+    padding: 3rem 2rem;
+    border-radius: .5rem;
+    text-align: justify;
+    transition: .2s linear;
+}
+.leer .caja-contenedor .caja img{
+    height: 50rem;
+}
+.leer .caja-contenedor .caja h1{
+    text-align:justify;
+    font-size: 2rem;
+    color: rgb(7, 149, 168);
+    padding-top: 1rem;
+    }
+.leer.content p{
+    text-align-last: justify;
+    font-size: 1.8rem;
+    color: black;
+    padding: 2rem ;
+}
+header{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 .5rem 1rem rgb(0, 0, 0,.1);
+    padding: 1rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 5rem;
+    color:rgb(14, 20, 107) ;
+}
+
+header .logo span{
+    color: rgb(14, 20, 107)  ;
+    }
+
+header .navbar a{
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    color: rgb(14, 20, 107) ;
+    }
+
+header .navbar a:hover{
+    color: rgb(8, 190, 114)
+}
+header .logo span:hover{
+    color: rgb(8, 190, 114)
+}
+
+header input{
+    display: none;
+}
+header label{
+    font-size: 3rem;
+    color: var(--negro);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
